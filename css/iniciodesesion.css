@@ -1,0 +1,157 @@
+ body {
+     background-color: #000;
+     background-image: url('../img/bg-repeat.png');
+     background-size: 300px;
+     background-repeat: repeat;
+     font-family: -apple-system,BlinkMacSystemFont,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+     color: #000;
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding-top: 40px;
+ }
+
+ .login-box,
+ .social-box {
+     background-color: #fff;
+     border-radius: 2px;
+     width: 100%;
+     max-width: 400px;
+     padding: 0.5rem;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+ }
+
+ .rockstar-logo {
+     width: 80px;
+     margin-bottom: 20px;
+ }
+
+ .form-control.is-invalid {
+     border-color: #b00000;
+     background-color: #f8d7da;
+ }
+
+ .btn-signin {
+     background-color: #ffcc00;
+     color: #000;
+     font-weight: 700;
+     border-radius: 0;
+     --bs-btn-padding-x: 1.35rem;
+ }
+
+ .btn-signin:hover {
+     background-color: #ffd633;
+ }
+
+ /* --- ICONO DE MOSTRAR/OCULTAR CONTRASEÑA --- */
+ .position-relative {
+     position: relative;
+ }
+
+ .toggle-password {
+     position: absolute;
+     right: 12px;           /* distancia del borde derecho */
+     top: 50%;              /* centrado vertical */
+     transform: translateY(-50%);
+     width: 22px;
+     height: 22px;
+     cursor: pointer;
+     opacity: 0.7;
+ }
+
+ .toggle-password:hover {
+     opacity: 1;
+ }
+ /* -------------------------------------------- */
+
+ .divider {
+     margin: 0.15rem 0 1rem;
+ }
+
+ footer a {
+     color: #f5c518;
+     text-decoration: none;
+ }
+
+ footer a:hover {
+     text-decoration: underline;
+ }
+
+ .social-box img {
+     width: 45px;
+     margin: 0 15px;
+     cursor: pointer;
+     transition: transform 0.2s;
+ }
+
+ .social-box img:hover {
+     transform: scale(1.1);
+ }
+
+ h4 {
+     font-weight: 600;
+     color: #4d4d4d;
+ }
+
+ .form-check-input[type=checkbox] {
+     border-radius: .25em;
+     border-color: #000;
+ }
+
+ .form-check-input:checked {
+     background-color: #000;
+ }
+
+ a {
+     color: #000;
+ }
+ .text-muted{
+    color:white!important;
+ }
+ p{
+    margin-bottom: 5rem;
+ }
+
+ @media (max-width: 480px) {
+
+    body {
+        padding-top: 20px; /* menos espacio arriba */
+        background-size: 200px; /* patrón más pequeño para móviles */
+    }
+
+    .login-box,
+    .social-box {
+        max-width: 90%;      /* más ancho en móvil */
+        padding: 1rem;       /* más padding para respiración */
+        box-shadow: none;    /* Rockstar usa sombras muy suaves en móvil */
+        border-radius: 4px;
+    }
+
+    .rockstar-logo {
+        width: 60px;         /* más pequeño */
+        margin-bottom: 15px;
+    }
+
+    input.form-control {
+        font-size: 16px;     /* evita zoom automático en móviles */
+        padding: 0.75rem;
+    }
+
+    .btn-signin {
+        width: 28%;         /* botón ancho completo */
+        padding: 0.85rem;
+        font-size: 1rem;
+        border-radius: 4px;
+    }
+
+    .social-box img {
+        width: 38px;         /* iconos más pequeños */
+        margin: 0 10px;
+    }
+
+    p {
+        margin-bottom: 2rem; /* menos separación */
+    }
+
+}
