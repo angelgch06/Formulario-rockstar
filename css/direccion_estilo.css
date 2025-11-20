@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #000;
+    background-image: url('https://s.rsg.sc/auth/images/bg-repeat.png');
+}
+
+.rockstar-logo {
+      position: relative;
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: center;
+      z-index: 3;
+    }
+     .rockstar-logo img {
+      width: 75px;
+      height: auto;
+      display: block;
+    }
+
+
+.form-container {
+    background: white;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 6px;
+    border: 3px solid #009cff;
+}
+
+h2 {
+    margin-bottom: 25px;
+}
+
+/* GRID general */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* Formulario */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+select {
+    background-color: white;
+}
+
+.error {
+    display: none;
+    background: #d60000;
+    color: white;
+    padding: 4px;
+    margin-top: 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Botones */
+.buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-primary {
+    background: #ffb300;
+    border: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-secondary {
+    background: white;
+    border: 2px solid #000;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer {
+      text-align: center;
+      font-size: 8px;
+      color: #dedcdc;
+      margin-top: 6rem;
+      z-index: 1;
+    }
+
+    footer a {
+      color: #dad6d6;
+      text-decoration: underline;
+      margin: 0 5px;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+/* Tablet */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .form-container{
+        padding: 1.5rem;
+    }
+    
+}
+
+/* Móvil */
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .form-container{
+        padding: 1.5rem;
+    }
+    
+
+    .buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+.was-validated .form-control:invalid,
+.was-validated .form-select:invalid {
+    background-image: none !important;
+}
+
+.was-validated .form-control:valid,
+.was-validated .form-select:valid {
+    background-image: none !important;
+}
+
+.invalid-feedback {
+    background: #d60000;
+    color: white;
+    padding: 6px;
+    border-radius: 4px;
+    margin-top: 6px;
+    font-size: 14px;
+    text-align: center;
+}
