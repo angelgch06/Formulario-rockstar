@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #000;
+    background-image: url('https://s.rsg.sc/auth/images/bg-repeat.png');
+}
+
+/* CARDS */
+.producto-card {
+    background: #9b9b9b;
+    border: 4px solid #000;
+    border-radius: 20px;
+    width: 260px;
+    padding: 25px;
+    text-align: center;
+    transition: .3s;
+}
+
+
+.producto-card.selected {
+    border-color: #000 ;
+}
+
+
+.producto-titulo {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: white;
+}
+
+
+.producto-btn {
+    background: #f9ba0f;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.producto-btn.contratado {
+    background: #000;
+    color: #f8cd47;
+}
+
+.rockstar-logo {
+      position: relative;
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: center;
+      z-index: 3;
+    }
+     .rockstar-logo img {
+      width: 75px;
+      height: auto;
+      display: block;
+    }
+
+
+/* ----- MOBILE (MÁXIMO 576PX) ----- */
+@media (max-width: 576px) {
+
+    /* estructura vertical */
+    .otros-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    /* todas las cards al 100% en móvil */
+    .otros-grid > div {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* Card 1 → izquierda */
+    .otros-grid > div:nth-child(1) {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    /* Card 2 → derecha */
+    .otros-grid > div:nth-child(2) {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* Card 3 → izquierda */
+    .otros-grid > div:nth-child(3) {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .otros-grid > div:nth-child(3) {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+}

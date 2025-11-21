@@ -4,30 +4,30 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Caja general */
+
 .form-box {
     background: #fff;
-    width: 100%;
-    max-width: 444px;
+    width: 107%;
+    max-width: 613px;
     margin: 40px auto;
     padding: 25px 72px 35px;
     border-radius: 4px;
 }
 
-/* GRID: por defecto móvil → 1 columna */
+
 .two-cols {
     display: grid;
-    grid-template-columns: 1fr; /* una columna en móvil */
+    grid-template-columns: 1fr; 
     gap: 34px;
     
 }
 
-/* Inputs y selects */
+
 .form-control, .form-select {
     border: 1px solid #4d4d4d !important;
     padding: 5px;
     font-size: 14px;
-    width: 99.58%; /* más largo en móvil */
+    width: 99.58%; 
 }
 
 .form-control:focus, .form-select:focus {
@@ -35,12 +35,12 @@ body {
     box-shadow: none;
 }
 
-/* Placeholder centrado */
+
 .date-input::placeholder {
     text-align: center;
 }
 
-/* Select estilo Rockstar */
+
 .select-wrapper {
     position: relative;
     width: 100%;
@@ -70,7 +70,7 @@ body {
     margin-right: 6px;
 }
 
-/* Botones centrados */
+
 .buttons-container {
     display: flex;
     flex-direction: row;
@@ -92,14 +92,14 @@ body {
     border-color: #000;
 }
 
-/* Tablet (768–1023px) → 1 columna y botones ocultos */
-@media (min-width: 768px) and (max-width: 1023px) {
+
+@media (min-width: 768px) and (max-width: 991.98px) {
     .form-box {
         max-width: 575px !important;
         padding: 37px 92px 75px 92px !important;
     }
     .two-cols {
-        grid-template-columns: 1fr; /* 1 columna */
+        grid-template-columns: 1fr; 
         gap: 39px;
         width: 100%;
     }
@@ -119,18 +119,60 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
-    .buttons-container {
-        display: none !important; /* botones ocultos en tablet */
+    
+}
+@media (min-width: 991.98px) and (max-width: 1199.98px) {
+    .form-box {
+        max-width: 783px !important;
+        padding: 37px 92px 75px 92px !important;
+    }
+    .two-cols {
+        grid-template-columns: 1fr;
+        gap: 39px;
+        width: 100%;
+    }
+    .two-cols > div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+    .form-control, .form-select {
+        width: 100% !important;
+        margin: 0 auto;
+    }
+    label {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+ 
+}
+@media (max-width: 575.98px) {
+    .form-box,
+    .login-box,
+    .social-box,
+    .otros-wrapper,
+    .container {
+        width: 104% !important;
+        
+        padding-left: 35px !important;
+        padding-right: 35px !important;
+        margin: 0 auto !important;
+    }
+
+    .otros-grid {
+        gap: 15px;
     }
 }
 
-/* PC (≥1024px) → 2 columnas y solo Volver */
 @media (min-width: 1024px) {
     .form-box {
         padding: 40px 60px;
     }
     .two-cols {
-        grid-template-columns: 1fr 1fr; /* dos columnas en PC */
+        grid-template-columns: 1fr 1fr; 
         gap: 31px 157px;
         justify-items: stretch;
     }
@@ -141,7 +183,7 @@ body {
         justify-content: flex-start;
     }
     .btn-siguiente {
-        display: none !important;
+        display: 13% !important;
     }
     .btn-volver {
         width: 13% !important;
