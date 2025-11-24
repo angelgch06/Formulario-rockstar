@@ -1,4 +1,4 @@
-  body {
+    body {
       background-color: #000;
       background-image: url('https://s.rsg.sc/auth/images/bg-repeat.png');
       background-size: contain;
@@ -83,19 +83,37 @@
     @media (max-width: 768px) {
       .policy-container {
         padding: 1.5rem;
+        width:103%;
       }
       .policy-logo img {
         width: 60px;
       }
     }
-
-    @media (max-width: 480px) {
-      .policy-container {
-        width: 95%;
-        padding: 1rem;
+    @media (min-width: 767.98px) and (max-width: 991.98px) {
+        .policy-container {
+        padding: 1.5rem;
+        width:75%;
       }
       .policy-logo img {
-        width: 55px;
+        width: 60px;
+      }
+    }
+     @media (min-width:576px) and (max-width:767.98px) {
+      .policy-container {
+        padding: 1.5rem 0.5rem 1.5rem 3.5rem;
+        width:113%;
+      }
+      .policy-logo img {
+        width: 60px;
+      }
+     }
+    @media (max-width: 575.98px) {
+      .policy-container {
+        width: 103%;
+        padding: 1.5rem;
+      }
+      .policy-logo img {
+        width: 60px;
       }
     }
 
