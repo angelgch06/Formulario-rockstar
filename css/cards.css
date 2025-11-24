@@ -57,9 +57,20 @@ body {
       display: block;
     }
 
-
 /* ----- MOBILE (MÁXIMO 576PX) ----- */
 @media (max-width: 576px) {
+
+    .payment-card {
+        /* Asegura que ocupe casi todo el ancho disponible */
+        width: 91%; 
+        /* Opcional: Asegura que no sea más ancho que la pantalla */
+        max-width: 100%; 
+        /* Centrarlo con márgenes automáticos si usas width < 100% */
+        margin-left: 15px;
+        margin-right: auto;
+    }
+
+    
 
     /* estructura vertical */
     .otros-grid {

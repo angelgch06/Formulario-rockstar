@@ -15,6 +15,7 @@ body {
 }
 
 
+
 .two-cols {
     display: grid;
     grid-template-columns: 1fr; 
@@ -79,13 +80,14 @@ body {
     margin-top: 1.5rem;
 }
 
-.btn-siguiente {
+
+.btn-personal-next {
     width: 120px;
     font-size: 14px;
     padding: 6px 0;
     background-color:#f7a800
 }
-.btn-volver {
+.btn-personal-back {
     width: 120px;
     font-size: 14px;
     padding: 6px 0;
@@ -122,6 +124,19 @@ body {
     
 }
 @media (min-width: 991.98px) and (max-width: 1199.98px) {
+    
+    .buttons-container {
+    /* Es esencial que sea display: flex para usar gap */
+    display: flex;
+    
+    /* Añade la separación deseada entre los elementos hijos */
+    gap: 500px; /* Puedes ajustar este valor (ej. 10px, 1.5rem, etc.) */
+    
+    /* Alineación de los botones dentro del contenedor */
+    justify-content: flex-start; /* Alinea los botones a la izquierda */
+    /* O si quieres que estén a la derecha: justify-content: flex-end; */
+}
+    
     .form-box {
         max-width: 783px !important;
         padding: 37px 92px 75px 92px !important;
@@ -168,6 +183,17 @@ body {
 }
 
 @media (min-width: 1024px) {
+    .buttons-container {
+    /* Es esencial que sea display: flex para usar gap */
+    display: flex;
+    
+    /* Añade la separación deseada entre los elementos hijos */
+    gap: 500px; /* Puedes ajustar este valor (ej. 10px, 1.5rem, etc.) */
+    
+    /* Alineación de los botones dentro del contenedor */
+    justify-content: flex-start; /* Alinea los botones a la izquierda */
+    /* O si quieres que estén a la derecha: justify-content: flex-end; */
+}
     .form-box {
         padding: 40px 60px;
     }

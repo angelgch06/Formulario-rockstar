@@ -18,7 +18,7 @@
       width: 90%;
       padding: 2.5rem;
       border-radius: 6px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
       text-align: left;
       position: relative;
       z-index: 2;
@@ -52,7 +52,7 @@
       color: #000;
     }
 
-    .form-check-input{
+    .form-check-input {
       border-radius: 0 !important;
       border: 2px solid #333 !important;
       cursor: pointer;
@@ -80,38 +80,60 @@
     }
 
     /* Responsive ajustes */
+
+
+    @media (min-width: 767.98px) and (max-width: 991.98px) {
+      .policy-container {
+        padding: 1.5rem;
+        width: 75%;
+      }
+
+      .policy-logo img {
+        width: 60px;
+      }
+    }
+
     @media (max-width: 768px) {
       .policy-container {
+        /* Mantenemos un ancho menor al 100% para evitar el desborde 
+       y para dejar un pequeño margen en los lados del viewport. */
+        width: 100%;
+        /* Centrado de bloque, aunque ya lo centras con body display:flex */
+        margin-left: auto;
+        margin-right: auto;
+        /* Reducimos el padding de 2.5rem a 1.5rem, pero simétrico */
         padding: 1.5rem;
-        width:103%;
       }
+
       .policy-logo img {
         width: 60px;
+      }
+
+      /*
+  --- AJUSTE NECESARIO ---
+  Los botones de 150px de ancho podrían ser demasiado grandes en móviles pequeños.
+  Los hacemos adaptativos para que ocupen todo el ancho disponible.
+  */
+      .d-flex.justify-content-between {
+        gap: 10px;
+        /* Añade espacio entre ellos */
+      }
+
+      .btn-back,
+      .btn-next {
+        width: 30%;
+        /* Hacemos que cada botón ocupe todo el ancho */
       }
     }
-    @media (min-width: 767.98px) and (max-width: 991.98px) {
-        .policy-container {
-        padding: 1.5rem;
-        width:75%;
-      }
-      .policy-logo img {
-        width: 60px;
-      }
-    }
-     @media (min-width:576px) and (max-width:767.98px) {
-      .policy-container {
-        padding: 1.5rem 0.5rem 1.5rem 3.5rem;
-        width:113%;
-      }
-      .policy-logo img {
-        width: 60px;
-      }
-     }
+
+
+
     @media (max-width: 575.98px) {
       .policy-container {
         width: 103%;
         padding: 1.5rem;
       }
+
       .policy-logo img {
         width: 60px;
       }

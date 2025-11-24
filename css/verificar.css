@@ -1,14 +1,3 @@
-body {
-    background-color: #000;
-    background-image: url('/img/Molecula_Fondo_Pc.jpg');
-    background-repeat: repeat;
-    color: #000;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
 
 .container-box {
     background-color: #fff;
@@ -20,6 +9,7 @@ body {
 .r-logo {
     width: 60px;
     margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 .error-msg {
