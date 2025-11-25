@@ -37,8 +37,7 @@
      color: #000;
      font-weight: 700;
      border-radius: 0;
-     --bs-btn-padding-x: 1.35rem;
-     width: 29%;
+     --bs-btn-padding-x: 0.35rem;
  }
 
  .btn-signin:hover {
@@ -117,42 +116,42 @@
  @media (max-width: 480px) {
 
     body {
-        padding-top: 20px; /* menos espacio arriba */
-        background-size: 200px; /* patrón más pequeño para móviles */
+        padding-top: 20px; 
+        background-size: 200px; 
     }
 
     .login-box,
     .social-box {
-        max-width: 90%;      /* más ancho en móvil */
-        padding: 1rem;       /* más padding para respiración */
-        box-shadow: none;    /* Rockstar usa sombras muy suaves en móvil */
+        max-width: 90%;      
+        padding: 1rem;       
+        box-shadow: none;    
         border-radius: 4px;
     }
 
     .rockstar-logo {
-        width: 60px;         /* más pequeño */
+        width: 60px;         
         margin-bottom: 15px;
     }
 
     input.form-control {
-        font-size: 16px;     /* evita zoom automático en móviles */
+        font-size: 16px;    
         padding: 0.75rem;
     }
 
-    .btn-signin-inicio {
-        width: 28%;         /* botón ancho completo */
+    .btn-signin {
+        width: 28%;         
         padding: 0.85rem;
         font-size: 1rem;
         border-radius: 4px;
     }
 
     .social-box img {
-        width: 38px;         /* iconos más pequeños */
+        width: 38px;        
         margin: 0 10px;
     }
 
     p {
-        margin-bottom: 2rem; /* menos separación */
+        margin-bottom: 2rem; 
     }
 
 }

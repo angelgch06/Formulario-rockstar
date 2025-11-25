@@ -53,6 +53,11 @@ body {
     -moz-appearance: none;
     padding-right: 50px;
 }
+.select-pequeno {
+    width: 180px;  /* Ajusta el ancho aquí */
+    display: inline-block;  /* Evita que ocupe todo el ancho */
+}
+
 
 .select-arrow {
     position: absolute;
@@ -123,7 +128,7 @@ body {
     }
     
 }
-@media (min-width: 991.98px) and (max-width: 1199.98px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
     
     .buttons-container {
     /* Es esencial que sea display: flex para usar gap */
@@ -182,7 +187,7 @@ body {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
     .buttons-container {
     /* Es esencial que sea display: flex para usar gap */
     display: flex;
@@ -222,4 +227,5 @@ body {
     padding: 25px 185px 35px 76px;
     border-radius: 4px;
 }
+
 }
