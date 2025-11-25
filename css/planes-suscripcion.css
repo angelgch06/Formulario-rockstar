@@ -1,15 +1,6 @@
-body {
-    background-color: #000;
-    background-image: url('/img/Molecula_Fondo_Pc.jpg');
-    background-repeat: repeat;
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
 
-.r-logo {
+
+.r-logo-suscripcion {
     width: 60px;
     margin: 100px auto 30px auto;
 }
@@ -19,7 +10,7 @@ body {
     justify-content: center; 
 }
 
-.contenedor {
+.contenedor-planes-suscripcion {
     background: white;
     padding: 40px;
     max-width: 1300px;
@@ -28,7 +19,7 @@ body {
     text-align: center;
 }
 
-.plan-card {
+.plan-card-planes-suscripcion {
     border: 5px solid #000;
     color: white;
     border-radius: 25px;
@@ -40,12 +31,12 @@ body {
     height: 100%;
 }
 
-.plan-card:hover {
+.plan-card-planes-suscripcion:hover {
     border-color: #f5a000;
 }
 
 /*ocultar input radio (circulos de arriba de las tarjetas)*/
-.plan-radio {
+.plan-radio-planes-suscripcion {
     display: none;
 }
 
@@ -83,12 +74,12 @@ p {
 }
 
 @media (min-width: 992px) { 
-    .contenedor .row {
+    .contenedor-planes-suscripcion .row {
         column-gap: 100px; 
         justify-content: center; 
     }
 
-    .contenedor {
+    .contenedor-planes-suscripcion {
         background: white;
         padding: 40px;
         max-width: 1300px;
@@ -101,7 +92,7 @@ p {
         justify-content: space-between;
     }
     
-    .plan-card {
+    .plan-card-planes-suscripcion {
         border: 5px solid #000;
         color: white;
         border-radius: 25px;
@@ -115,7 +106,7 @@ p {
 }
 
 @media (max-width: 991px) { 
-    .contenedor {
+    .contenedor-planes-suscripcion {
         min-height: auto; 
         padding: 20px 10px; 
     }
@@ -127,7 +118,7 @@ p {
 }
 
 @media (max-width: 756px) { 
-    .contenedor {
+    .contenedor-planes-suscripcion {
         width: 100%; 
     }
 }
