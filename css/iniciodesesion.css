@@ -32,12 +32,13 @@
      background-color: #f8d7da;
  }
 
- .btn-signin {
+ .btn-signin-inicio {
      background-color: #ffcc00;
      color: #000;
      font-weight: 700;
      border-radius: 0;
      --bs-btn-padding-x: 1.35rem;
+     width: 29%;
  }
 
  .btn-signin:hover {
@@ -138,7 +139,7 @@
         padding: 0.75rem;
     }
 
-    .btn-signin {
+    .btn-signin-inicio {
         width: 28%;         /* botón ancho completo */
         padding: 0.85rem;
         font-size: 1rem;

@@ -1,18 +1,10 @@
-body {
-    background-color: #000;
-    color: #000;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
 
-.r-logo {
+
+.r-logo-contacto {
     display: none;
 }
 
-.contenedor {
+.contenedor-contacto {
     background-color: white;
     padding: 30px;
     margin: auto;
@@ -24,28 +16,28 @@ body {
     text-align: center;
 }
 
-.btn-custom {
+.btn-custom-contacto {
     background-color: #f5a000;
     color: rgb(0, 0, 0);
     padding: 2px 15px;
     border-radius: 0px;
 }
 
-.btn-volver {
+.btn-volver-contacto {
     display: none;
 }
 
-.btn-custom:hover {
+.btn-custom-contacto:hover {
     background-color: #f5a000;
     color: rgb(0, 0, 0);
 }
 
-.form-control {
+.form-control-contacto {
     width: 17em;
     height: 30px;
 }
 
-.form-control:focus {
+.form-control-contacto:focus {
     border-color: #f5a000;
     box-shadow: 0 0 1px #f5a00050;
 }
@@ -54,14 +46,15 @@ body {
     color: #636363;
 }
 
-p {
+.p-contacto {
     color: #ffffff;
     font-size: 0.8rem;
     text-align: center;
 }
 
+/* Tablets */
 @media (min-width: 768px) and (max-width: 992px) {
-    .btn-volver {
+    .btn-volver-contacto {
         display: none;
     }
 
@@ -69,21 +62,21 @@ p {
         justify-content: center;
     }
 
-    .form-control {
-        width: 22em;
+    .form-control-contacto {
+        width: 100%;
         margin: 0 auto;
     }
 
-    .form-label {
+    .form-label-contacto {
         text-align: center;
         width: 100%;
     }
 
-    .r-logo {
+    .r-logo-contacto {
         display: none;
     }
 
-    .contenedor {
+    .contenedor-contacto {
         background-color: white;
         padding: 30px;
         border-radius: 0px;
@@ -97,14 +90,16 @@ p {
         color: #636363;
     }
 
-    p {
+    .p-contacto {
         color: #ffffff;
         font-size: 0.8rem;
         text-align: center;
     }
 
+    
 }
 
+/* Moviles */
 @media (min-width: 576px) and (max-width: 768px) {
 
     .copy {
@@ -112,7 +107,7 @@ p {
         display: block;
     }
 
-    p {
+    .p-contacto {
         color: #ffffff;
         font-size: 1rem;
         text-align: center;
@@ -126,17 +121,17 @@ p {
         justify-content: center;
     }
 
-    .form-control {
-        width: 22em;
+    .form-control-contacto {
+        width: 100%;
         margin: 0 auto;
     }
 
-    .form-label {
+    .form-label-contacto {
         text-align: center;
         width: 100%;
     }
 
-    .btn-volver {
+    .btn-volver-contacto {
         background-color: #ffffff;
         color: rgb(0, 0, 0);
         padding: 2px 15px;
@@ -146,12 +141,11 @@ p {
     }
 
     .text-end {
-        /* Mantiene los botones a la derecha (gracias a la clase Bootstrap 'text-end') */
         display: flex;
         gap: 70%;
     }
 
-    .r-logo {
+    .r-logo-contacto {
         width: 100px;
         margin-top: 70px;
         display: flex;
