@@ -1,0 +1,133 @@
+body {
+    background-color: #000;
+    background-image: url('/img/Molecula_Fondo_Pc.jpg');
+    background-repeat: repeat;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.r-logo {
+    width: 60px;
+    margin: 100px auto 30px auto;
+}
+
+/*Centrado de las tarjetas*/
+.row {
+    justify-content: center; 
+}
+
+.contenedor {
+    background: white;
+    padding: 40px;
+    max-width: 1300px;
+    border-radius: 0;
+    width: 90%;
+    text-align: center;
+}
+
+.plan-card {
+    border: 5px solid #000;
+    color: white;
+    border-radius: 25px;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #b1b1b1;
+    display: flex;
+    flex-direction: column; 
+    height: 100%;
+}
+
+.plan-card:hover {
+    border-color: #f5a000;
+}
+
+/*ocultar input radio (circulos de arriba de las tarjetas)*/
+.plan-radio {
+    display: none;
+}
+
+.btn-custom {
+    background-color: #f5a000;
+    border-radius: 0;
+    padding: 5px 15px;
+    font-weight: bold;
+}
+
+.btn-custom:hover {
+    opacity: 100%;
+    color: black;
+    background-color: #f5a000;
+}
+
+.btn-secondary {
+    background-color: #000000;
+}
+
+.btn-secondary:hover {
+    background-color: #000000;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+p {
+    color: white;
+}
+
+.copy {
+    color: #b1b1b1;
+}
+
+@media (min-width: 992px) { 
+    .contenedor .row {
+        column-gap: 100px; 
+        justify-content: center; 
+    }
+
+    .contenedor {
+        background: white;
+        padding: 40px;
+        max-width: 1300px;
+        border-radius: 0;
+        width: 90%;
+        text-align: center;
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .plan-card {
+        border: 5px solid #000;
+        color: white;
+        border-radius: 25px;
+        padding: 80px 30px; /* Reduje el padding para mejor control */
+        text-align: center;
+        background-color: #b1b1b1;
+        display: flex;
+        flex-direction: column; 
+        height: 100%; 
+    }
+}
+
+@media (max-width: 991px) { 
+    .contenedor {
+        min-height: auto; 
+        padding: 20px 10px; 
+    }
+
+    footer {
+        font-size: 12px; 
+    }
+  
+}
+
+@media (max-width: 756px) { 
+    .contenedor {
+        width: 100%; 
+    }
+}

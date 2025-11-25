@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="/css/direccion_estilo.css">
     <link rel="stylesheet" href="/css/cards.css">
     <link rel="stylesheet" href="/css/datos-contacto.css">
+    <link rel="stylesheet" href="/css/planes-suscripcion.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
@@ -296,7 +297,8 @@
     </div>
 
     <footer>
-        <p class="p-contacto"><span class="copy">&copy; 2025 ROCKSTAR GAMES </span> | PRIVACY POLICY | TERMS OF SERVICE |<br class="break-mobile"> COOKIE SETTINGS</p>
+        <p class="p-contacto"><span class="copy">&copy; 2025 ROCKSTAR GAMES </span> | PRIVACY POLICY | TERMS OF SERVICE
+            |<br class="break-mobile"> COOKIE SETTINGS</p>
     </footer>
 
     <!--Formulario de direccion-->
@@ -304,8 +306,8 @@
         <img src="../img/logo-blanco-rockstar1.svg" width="90">
     </div>
 
-    
-    
+
+
     <div class="container bg-white  border-info rounded form-box">
         <h2 class="mb-4">Datos de direccion</h2>
         <form class="needs-validation" novalidate>
@@ -399,12 +401,72 @@
         <a href="#">|COOKIE SETTINGS</a>
     </footer>
 
-    <div class="text-center pt-4">
-        <img src="../img/logo-blanco-rockstar1.svg" width="90">
+    <!-- Planes de suscripcion -->
+    <img src="img/logo-blanco-rockstar.svg" alt="logo-blanco-rockstar" class="r-logo-suscripcion">
+    <div class="contenedor-planes-suscripcion">
+
+        <h3 class="mb-4 fw-bold">PLANES DE SUSCRIPCIÓN</h3>
+
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-6 col-md-6 col-lg-3">
+                <input type="radio" name="plan" id="basico" class="plan-radio-planes-suscripcion">
+                <div class="plan-card-planes-suscripcion" data-target="basico">
+                    <h5 class="fw-bold">PLAN BÁSICO</h5>
+                    <p>5€/mes</p>
+                    <ul class="text-start mx-auto">
+                        <li>Acceso limitado a funciones principales.</li>
+                        <li>Soporte técnico por correo.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3">
+                <input type="radio" name="plan" id="pro" class="plan-radio-planes-suscripcion">
+                <div class="plan-card-planes-suscripcion" data-target="pro">
+                    <h5 class="fw-bold">PLAN PRO</h5>
+                    <p>10€/mes</p>
+                    <ul class="text-start mx-auto">
+                        <li>Acceso completo a funciones.</li>
+                        <li>Actualizaciones automáticas.</li>
+                        <li>Soporte prioritario.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-12 col-lg-3 mx-md-auto mx-lg-0">
+                <input type="radio" name="plan" id="premium" class="plan-radio-planes-suscripcion">
+                <div class="plan-card-planes-suscripcion" data-target="premium">
+                    <h5 class="fw-bold">PLAN PREMIUM</h5>
+                    <p>20€/mes</p>
+                    <ul class="text-start mx-auto">
+                        <li>Acceso anticipado a contenido exclusivo.</li>
+                        <li>Soporte técnico 24/7.</li>
+                        <li>Beneficios adicionales.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="d-flex justify-content-between mt-4">
+            <button class="btn btn-secondary rounded-0">Volver</button>
+            <button class="btn btn-custom">Siguiente</button>
+        </div>
+
     </div>
+
+    <footer>
+        <p>
+            <span class="copy">&copy;2025 ROCKSTAR GAMES</span> | PRIVACY POLICY | TERMS OF SERVICE | COOKIE SETTINGS
+        </p>
+    </footer>
 
     <!--Cards de otros productos-->
 
+    <div class="text-center pt-4">
+        <img src="../img/logo-blanco-rockstar1.svg" width="90">
+    </div>
     <div class="container bg-white p-4 my-5 border-info rounded form-box">
 
         <div class="container py-5 otros-wrapper">
