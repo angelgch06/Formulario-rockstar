@@ -1,0 +1,160 @@
+body {
+    background-color: #000;
+    color: #000;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.r-logo {
+    display: none;
+}
+
+.contenedor {
+    background-color: white;
+    padding: 30px;
+    margin: auto;
+    max-width: 800px;
+    border-radius: 0px;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+.btn-custom {
+    background-color: #f5a000;
+    color: rgb(0, 0, 0);
+    padding: 2px 15px;
+    border-radius: 0px;
+}
+
+.btn-volver {
+    display: none;
+}
+
+.btn-custom:hover {
+    background-color: #f5a000;
+    color: rgb(0, 0, 0);
+}
+
+.form-control {
+    width: 17em;
+    height: 30px;
+}
+
+.form-control:focus {
+    border-color: #f5a000;
+    box-shadow: 0 0 1px #f5a00050;
+}
+
+.copy {
+    color: #636363;
+}
+
+p {
+    color: #ffffff;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .btn-volver {
+        display: none;
+    }
+
+    .row {
+        justify-content: center;
+    }
+
+    .form-control {
+        width: 22em;
+        margin: 0 auto;
+    }
+
+    .form-label {
+        text-align: center;
+        width: 100%;
+    }
+
+    .r-logo {
+        display: none;
+    }
+
+    .contenedor {
+        background-color: white;
+        padding: 30px;
+        border-radius: 0px;
+        max-width: 800px;
+        width: 90%;
+        margin: 3em auto;
+    }
+
+
+    .copy {
+        color: #636363;
+    }
+
+    p {
+        color: #ffffff;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+    .copy {
+        color: #636363;
+        display: block;
+    }
+
+    p {
+        color: #ffffff;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .break-mobile {
+        display: none;
+    }
+
+    .row {
+        justify-content: center;
+    }
+
+    .form-control {
+        width: 22em;
+        margin: 0 auto;
+    }
+
+    .form-label {
+        text-align: center;
+        width: 100%;
+    }
+
+    .btn-volver {
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        padding: 2px 15px;
+        border-radius: 0px;
+        border-color: #000;
+        display: flex;
+    }
+
+    .text-end {
+        /* Mantiene los botones a la derecha (gracias a la clase Bootstrap 'text-end') */
+        display: flex;
+        gap: 70%;
+    }
+
+    .r-logo {
+        width: 100px;
+        margin-top: 70px;
+        display: flex;
+    }
+
+}

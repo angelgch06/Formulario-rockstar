@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--Estilos css-->
-    <link rel="stylesheet" href="css/verificar.css">
+    <link rel="stylesheet" href="/css/verificar.css">
     <link rel="stylesheet" href="../css/iniciodesesion.css">
     <link rel="stylesheet" href="../css/datospersonales.css">
     <link rel="script" href="../js/iniciodesesion.js">
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/css/estilo.css">
     <link rel="stylesheet" href="/css/direccion_estilo.css">
     <link rel="stylesheet" href="/css/cards.css">
+    <link rel="stylesheet" href="/css/datos-contacto.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
@@ -61,7 +62,7 @@
 
             <div class="d-flex mb-3 justify-content-between align-items-center">
                 <a href="#" class="text-decoration-none">Forgot your password?</a>
-                <button type="submit" class="btn btn-signin text-end">Sign In</button>
+                <button type="submit" class="btn btn-signin-inicio text-end">Sign In</button>
             </div>
 
         </form>
@@ -240,11 +241,71 @@
         </div>
     </div>
 
+    <!--Formulario de datos de contacto-->
+    <img src="img/logo-blanco-rockstar.svg" alt="logo-r" class="r-logo-contacto">
+    <div class="contenedor-contacto">
+        <h4 class="mb-4">Datos de contacto</h4>
+
+
+        <div class="row g-4">
+
+
+            <div class="col-12 col-lg-6">
+                <label class="form-label-contacto">Teléfono móvil</label>
+                <input type="text" class="form-control-contacto">
+            </div>
+
+
+            <div class="col-12 col-lg-6">
+                <label class="form-label-contacto">Teléfono fijo</label>
+                <input type="text" class="form-control-contacto">
+            </div>
+
+
+            <div class="col-12 col-lg-6">
+                <label class="form-label-contacto">Correo electrónico</label>
+                <input type="email" placeholder="example@gmail.com" class="form-control-contacto">
+            </div>
+
+
+            <div class="col-12 col-lg-6">
+                <label class="form-label-contacto">Perfil de LinkedIn</label>
+                <input type="text" class="form-control-contacto">
+            </div>
+
+
+            <div class="col-12 col-lg-6">
+                <label class="form-label-contacto">Perfil de X</label>
+                <input type="text" class="form-control-contacto">
+            </div>
+
+
+            <div class="col-12 col-lg-6">
+                <label class="form-label-contacto">Sitio web personal</label>
+                <input type="text" class="form-control-contacto">
+            </div>
+
+
+        </div>
+
+
+        <div class="text-end mt-4 contenedor-botones">
+            <button class="btn btn-volver-contacto">Volver</button>
+            <button class="btn btn-custom-contacto">Siguiente</button>
+        </div>
+    </div>
+
+    <footer>
+        <p class="p-contacto"><span class="copy">&copy; 2025 ROCKSTAR GAMES </span> | PRIVACY POLICY | TERMS OF SERVICE |<br class="break-mobile"> COOKIE SETTINGS</p>
+    </footer>
+
+    <!--Formulario de direccion-->
     <div class="text-center pt-4">
         <img src="../img/logo-blanco-rockstar1.svg" width="90">
     </div>
 
-    <!--Formulario de direccion-->
+    
+    
     <div class="container bg-white  border-info rounded form-box">
         <h2 class="mb-4">Datos de direccion</h2>
         <form class="needs-validation" novalidate>
